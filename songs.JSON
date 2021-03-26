@@ -1,0 +1,68 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",   
+	"$id": "http://mysite,com/student.schema.json",
+	"title": "song list",
+	"songs":[
+		{
+	"title": "Welcome to The Jungle",
+	"produced": "Guns N' Roses",
+	"genre": "Metal",
+	"date": "September 28, 1987"
+		},
+		{
+		"title": "Stairway to Heaven",
+		"produced": "Led Zeppelin: Jimmy Page, John Paul Jones, and John Bonham",
+		"genre": "Metal",
+		"date": "November 8, 1971"
+		},
+		{
+		"title": "Livin’ on a Prayer",
+		"produced": "Bon Jovi",
+		"genre": "Rock",
+		"date": "October 31, 1986"
+		},
+		{
+		"title": "Dream On",
+		"produced": "Steven Tyler",
+		"genre": "Rock",
+		"date": "June 27, 1973"
+		},
+		{
+		"title": "Eye of the Tiger",
+		"produced": "Survivor",
+		"genre": "Rock",
+		"date": "1982"
+		},
+		{
+		"title": "Another One Bites the Dust",
+		"produced": "Queen",
+		"genre": "Rock",
+		"date": "1980"
+		},		
+		{
+		"title": "Free Bird",
+		"produced": "QLynyrd Skynyrd",
+		"genre": "Rock",
+		"date": "1973"
+		},
+		{
+		"title": "Thunderstruck",
+		"produced": "AC/DC",
+		"genre": "Rock",
+		"date": "September 10, 1990"
+		},
+		{
+		"title": "Dreams",
+		"produced": "Fleetwood Mac",
+		"genre": "Rock",
+		"date": "March 24, 1977"
+		},	
+		{
+		"title": "Like A Rolling Stone",
+		"produced": "Bob Dylan",
+		"genre": "Rock",
+		"date": "July 20, 1965"
+		}
+	]
+	
+}

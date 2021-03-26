@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+		<h2>
+			Part Two
+		</h2>
+		<div id= "JSONdata">
+		</div>
+		<script>
+		$.getJSON('./songs.json', function(data){
+			var jsonStr = JSON.stringify(data);
+			document.getElementById('JSONdata').innerHTML = jsonStr;
+		});
+		</script>
+		<h2>
+			Part Three
+		</h2>
+		<div id= "data_beautiful">
+		</div>
+            <script>
+                $.getJSON('./songs.json', function (data){
+					strData  = JSON.stringify(data);
+					jsonData = JSON.parse(strData);
+					for(let i = 0; i < 10; i++){
+						document.getElementById('data_beautiful').innerHTML +=(jsonData["songs"][i]["title"]+ "<br>"+jsonData["songs"][i]["produced"]+"<br>"+jsonData["songs"][i]["genre"]+"<br>"+jsonData["songs"][i]["date"]+"<br><br>")
+					}
+                });
+            </script>
+		<h2>
+			Part Four
+		</h2>
+		<script>
+			function handleClick(){
+				console.log("click!");
+				document.getElementById('final').innerHTML = "";
+				$.getJSON('./songs.json', function (data){
+					strData  = JSON.stringify(data);
+					jsonData = JSON.parse(strData);
+					var value = document.getElementById('genres').value;
+					for(let i = 0; i < 10; i++){
+						console.log(jsonData["songs"][i]["genre"])
+						console.log(value)
+						if(jsonData["songs"][i]["genre"] == value){
+						document.getElementById('final').innerHTML +=(jsonData["songs"][i]["title"]+ "<br><br>")
+						}
+					}
+                });
+			}
+		</script>
+		<select name="genres" id="genres">
+			<option value="Metal">Metal</option>
+			<option value="Rock">Rock</option>
+		</select>
+		<label for="Filter">Submit</label>
+		<button id="Filter" onclick="handleClick()"></button>
+		<div id= "final">
+		</div>
+
+
+    </body>
+</html>
