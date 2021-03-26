@@ -21,7 +21,7 @@
 		<div id= "data_beautiful">
 		</div>
             <script>
-                $.getJSON('./songs.json', function (data){
+                $.getJSON('songs.JSON', function (data){
 					strData  = JSON.stringify(data);
 					jsonData = JSON.parse(strData);
 					for(let i = 0; i < 10; i++){
@@ -36,7 +36,7 @@
 			function handleClick(){
 				console.log("click!");
 				document.getElementById('final').innerHTML = "";
-				$.getJSON('./songs.json', function (data){
+				$.getJSON('songs.JSON', function (data){
 					strData  = JSON.stringify(data);
 					jsonData = JSON.parse(strData);
 					var value = document.getElementById('genres').value;
