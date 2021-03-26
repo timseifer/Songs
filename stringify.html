@@ -10,7 +10,7 @@
 		<div id= "JSONdata">
 		</div>
 		<script>
-		$.getJSON('songs.json', function(data){
+		$.getJSON('songs.JSON', function(data){
 			var jsonStr = JSON.stringify(data);
 			document.getElementById('JSONdata').innerHTML = jsonStr;
 		});
